@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Angel's Sin ´ཀ` | Evil Discord Bot</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="fixed top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50">
+
+        <!-- NAVBAR -->
+
+        <nav id="navbar"
+            class="flex items-center justify-between px-6 py-4 transition-all duration-300 rounded-2xl nav-transparent">
+
+            <!-- LOGO -->
+
+            <div class="flex items-center gap-4">
+
+                <div
+                    class="w-12 h-12 rounded-2xl bg-red-900 flex items-center justify-center shadow-[0_0_25px_rgba(139,0,0,0.45)]">
+
+                    <i class="fa-solid fa-skull text-white"></i>
+
+                </div>
+
+                <div>
+
+                    <h2 class="text-2xl font-black tracking-wide text-white">
+                        Angel's Sin ´ཀ`
+                    </h2>
+
+                    <p class="text-sm text-zinc-500">
+                        Evil Discord Core
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- MENU -->
+
+            <div class="hidden lg:flex items-center gap-12 text-sm font-medium text-zinc-300">
+                <a href="/" class="hover:text-red-500 transition">
+                    Home
+                </a>
+
+                <a href="/about/" class="hover:text-red-500 transition">
+                    About Us
+                </a>
+
+                <a href="/features/" class="hover:text-red-500 transition">
+                    Features
+                </a>
+
+                <a href="/stats/" class="hover:text-red-500 transition active-link">
+                    Stats
+                </a>
+
+                <a href="/commands/" class="hover:text-red-500 transition">
+                    Commands
+                </a>
+
+            </div>
+
+            <!-- BUTTON -->
+
+            <a href="https://discord.com/oauth2/authorize?client_id=1501177785161351218&permissions=8&integration_type=0&scope=bot"
+                target="_blank"
+                class="px-7 py-3 bg-red-800 hover:bg-red-700 rounded-2xl font-semibold transition shadow-[0_0_30px_rgba(139,0,0,0.35)]">
+
+                Invite Bot
+
+            </a>
+
+        </nav>
+
+    </header>
+
+<!-- HERO -->
+
+<section class="relative min-h-screen flex items-center overflow-hidden grid-bg">
+
+    <div class="absolute inset-0 hero-glow"></div>
+
+    <div class="absolute top-24 left-20 w-72 h-72 bg-red-900/20 blur-[120px] rounded-full"></div>
+
+    <div class="absolute bottom-20 right-20 w-72 h-72 bg-red-800/10 blur-[140px] rounded-full"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32 w-full text-center">
+
+        <div class="fade-up">
+
+            <div class="inline-flex items-center gap-3 glass px-4 py-2 rounded-full mb-8">
+
+                <span class="w-2 h-2 bg-red-600 rounded-full animate-pulse"></span>
+
+                <p class="text-sm text-zinc-400">
+                    Live Analytics • Global Activity • Dark Statistics
+                </p>
+
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-black leading-tight max-w-5xl mx-auto">
+
+                Server Statistics
+                <span class="gradient-text">
+                    From The Abyss
+                </span>
+
+            </h1>
+
+            <p class="mt-8 text-zinc-400 text-lg leading-relaxed max-w-3xl mx-auto">
+
+                Track Angel's Sin global growth,
+                command usage, economy circulation,
+                active servers and infernal performance analytics.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MAIN STATS -->
+
+<section class="py-28">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- TITLE -->
+
+        <div class="text-center mb-16 fade-up">
+
+            <p class="text-red-600 uppercase tracking-[5px] font-semibold">
+                Global Analytics
+            </p>
+
+            <h2 class="text-4xl md:text-5xl font-black mt-4">
+                Live Infernal Numbers
+            </h2>
+
+        </div>
+
+        <!-- GRID -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <!-- USERS -->
+
+            <div class="glass rounded-[28px] p-7 stat-card fade-up text-center">
+
+                <div class="w-20 h-20 mx-auto rounded-3xl bg-red-900/20 flex items-center justify-center text-red-600 text-4xl">
+
+                    <i class="fa-solid fa-users"></i>
+
+                </div>
+
+                <h2 class="text-5xl font-black gradient-text mt-6">
+
+                    <span class="counter"
+                    data-target="666">
+                        0
+                    </span>K+
+
+                </h2>
+
+                <p class="text-zinc-500 mt-4">
+                    Total Users
+                </p>
+
+            </div>
+
+            <!-- SERVERS -->
+
+            <div class="glass rounded-[28px] p-7 stat-card fade-up text-center">
+
+                <div class="w-20 h-20 mx-auto rounded-3xl bg-red-900/20 flex items-center justify-center text-red-600 text-4xl">
+
+                    <i class="fa-solid fa-server"></i>
+
+                </div>
+
+                <h2 class="text-5xl font-black gradient-text mt-6">
+
+                    <span class="counter"
+                    data-target="13">
+                        0
+                    </span>K+
+
+                </h2>
+
+                <p class="text-zinc-500 mt-4">
+                    Active Servers
+                </p>
+
+            </div>
+
+            <!-- COMMANDS -->
+
+            <div class="glass rounded-[28px] p-7 stat-card fade-up text-center">
+
+                <div class="w-20 h-20 mx-auto rounded-3xl bg-red-900/20 flex items-center justify-center text-red-600 text-4xl">
+
+                    <i class="fa-solid fa-terminal"></i>
+
+                </div>
+
+                <h2 class="text-5xl font-black gradient-text mt-6">
+
+                    <span class="counter"
+                    data-target="98">
+                        0
+                    </span>M+
+
+                </h2>
+
+                <p class="text-zinc-500 mt-4">
+                    Commands Used
+                </p>
+
+            </div>
+
+            <!-- UPTIME -->
+
+            <div class="glass rounded-[28px] p-7 stat-card fade-up text-center">
+
+                <div class="w-20 h-20 mx-auto rounded-3xl bg-red-900/20 flex items-center justify-center text-red-600 text-4xl">
+
+                    <i class="fa-solid fa-heart-pulse"></i>
+
+                </div>
+
+                <h2 class="text-5xl font-black gradient-text mt-6">
+
+                    <span class="counter-decimal"
+                    data-target="99.9">
+                        0
+                    </span>%
+
+                </h2>
+
+                <p class="text-zinc-500 mt-4">
+                    Uptime
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PERFORMANCE -->
+
+<section class="pb-28">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-8">
+
+            <!-- COMMAND ACTIVITY -->
+
+            <div class="glass rounded-[32px] p-8 fade-up">
+
+                <div class="flex items-center gap-4 mb-8">
+
+                    <div class="w-14 h-14 rounded-2xl bg-red-900/20 flex items-center justify-center text-red-600 text-2xl">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-3xl font-black">
+                            Command Activity
+                        </h3>
+
+                        <p class="text-zinc-500">
+                            Daily usage statistics
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- BARS -->
+
+                <div class="space-y-6">
+
+                    <!-- BAR -->
+
+                    <div>
+
+                        <div class="flex items-center justify-between mb-3">
+
+                            <p class="text-zinc-300">
+                                Moderation Commands
+                            </p>
+
+                            <p class="text-red-500">
+                                92%
+                            </p>
+
+                        </div>
+
+                        <div class="h-3 bg-white/5 rounded-full overflow-hidden">
+
+                            <div class="bar h-full w-[92%] bg-gradient-to-r from-red-900 to-red-500 rounded-full"></div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BAR -->
+
+                    <div>
+
+                        <div class="flex items-center justify-between mb-3">
+
+                            <p class="text-zinc-300">
+                                Economy Commands
+                            </p>
+
+                            <p class="text-red-500">
+                                86%
+                            </p>
+
+                        </div>
+
+                        <div class="h-3 bg-white/5 rounded-full overflow-hidden">
+
+                            <div class="bar h-full w-[86%] bg-gradient-to-r from-red-900 to-red-500 rounded-full"></div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BAR -->
+
+                    <div>
+
+                        <div class="flex items-center justify-between mb-3">
+
+                            <p class="text-zinc-300">
+                                AI Systems
+                            </p>
+
+                            <p class="text-red-500">
+                                78%
+                            </p>
+
+                        </div>
+
+                        <div class="h-3 bg-white/5 rounded-full overflow-hidden">
+
+                            <div class="bar h-full w-[78%] bg-gradient-to-r from-red-900 to-red-500 rounded-full"></div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BAR -->
+
+                    <div>
+
+                        <div class="flex items-center justify-between mb-3">
+
+                            <p class="text-zinc-300">
+                                Hunt & Pets
+                            </p>
+
+                            <p class="text-red-500">
+                                69%
+                            </p>
+
+                        </div>
+
+                        <div class="h-3 bg-white/5 rounded-full overflow-hidden">
+
+                            <div class="bar h-full w-[69%] bg-gradient-to-r from-red-900 to-red-500 rounded-full"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ECONOMY -->
+
+            <div class="glass rounded-[32px] p-8 fade-up">
+
+                <div class="flex items-center gap-4 mb-8">
+
+                    <div class="w-14 h-14 rounded-2xl bg-red-900/20 flex items-center justify-center text-red-600 text-2xl">
+
+                        <i class="fa-solid fa-coins"></i>
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="text-3xl font-black">
+                            Dark Economy
+                        </h3>
+
+                        <p class="text-zinc-500">
+                            Currency circulation
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="space-y-6">
+
+                    <div class="glass rounded-2xl p-5 flex items-center justify-between">
+
+                        <div class="flex items-center gap-4">
+
+                            <i class="fa-solid fa-wallet text-red-600 text-xl"></i>
+
+                            <div>
+
+                                <h4 class="font-bold">
+                                    Total Coins
+                                </h4>
+
+                                <p class="text-zinc-500 text-sm">
+                                    Circulating globally
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <h3 class="text-2xl font-black gradient-text">
+                            4.2B
+                        </h3>
+
+                    </div>
+
+                    <div class="glass rounded-2xl p-5 flex items-center justify-between">
+
+                        <div class="flex items-center gap-4">
+
+                            <i class="fa-solid fa-store text-red-600 text-xl"></i>
+
+                            <div>
+
+                                <h4 class="font-bold">
+                                    Shop Purchases
+                                </h4>
+
+                                <p class="text-zinc-500 text-sm">
+                                    Items bought today
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <h3 class="text-2xl font-black gradient-text">
+                            182K
+                        </h3>
+
+                    </div>
+
+                    <div class="glass rounded-2xl p-5 flex items-center justify-between">
+
+                        <div class="flex items-center gap-4">
+
+                            <i class="fa-solid fa-dragon text-red-600 text-xl"></i>
+
+                            <div>
+
+                                <h4 class="font-bold">
+                                    Pets Hatched
+                                </h4>
+
+                                <p class="text-zinc-500 text-sm">
+                                    Demon eggs opened
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <h3 class="text-2xl font-black gradient-text">
+                            93K
+                        </h3>
+
+                    </div>
+
+                    <div class="glass rounded-2xl p-5 flex items-center justify-between">
+
+                        <div class="flex items-center gap-4">
+
+                            <i class="fa-solid fa-trophy text-red-600 text-xl"></i>
+
+                            <div>
+
+                                <h4 class="font-bold">
+                                    Battles Won
+                                </h4>
+
+                                <p class="text-zinc-500 text-sm">
+                                    Global arena fights
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <h3 class="text-2xl font-black gradient-text">
+                            1.7M
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="pb-28">
+
+    <div class="max-w-5xl mx-auto px-6">
+
+        <div class="glass rounded-[36px] p-10 md:p-16 text-center relative overflow-hidden fade-up">
+
+            <div class="absolute inset-0 bg-gradient-to-br from-red-950/30 to-transparent"></div>
+
+            <div class="relative z-10">
+
+                <h2 class="text-4xl md:text-5xl font-black leading-tight">
+
+                    Become Part Of The
+                    <span class="gradient-text">
+                        Infernal Empire
+                    </span>
+
+                </h2>
+
+                <p class="text-zinc-500 text-lg mt-8 max-w-2xl mx-auto">
+
+                    Join thousands of servers already controlled
+                    by Angel's Sin ´ཀ`.
+
+                </p>
+
+                <a href="https://discord.com/oauth2/authorize?client_id=1501177785161351218&permissions=8&integration_type=0&scope=bot"
+                target="_blank"
+                class="inline-flex items-center gap-3 mt-10 btn-red px-10 py-5 rounded-2xl text-lg font-bold">
+
+                    <i class="fa-brands fa-discord"></i>
+
+                    Invite Angel's Sin
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="border-t border-red-900/20 py-10">
+
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+
+        <div>
+
+            <h2 class="text-3xl font-black">
+                Angel's Sin ´ཀ`
+            </h2>
+
+            <p class="text-zinc-600 mt-2 tracking-[3px] uppercase text-sm">
+                Evil Discord Domination
+            </p>
+
+        </div>
+
+        <div class="flex items-center gap-6 text-2xl">
+
+            <a href="#" class="hover:text-red-600 duration-300">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+
+            <a href="#" class="hover:text-red-600 duration-300">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#" class="hover:text-red-600 duration-300">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- JS -->
+
+<script>
+
+    // NAVBAR
+
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+
+        if(window.scrollY > 40){
+
+            navbar.classList.add("nav-scrolled");
+
+        }else{
+
+            navbar.classList.remove("nav-scrolled");
+
+        }
+
+    });
+
+    // FADE ANIMATION
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach((entry) => {
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.1
+    });
+
+    document.querySelectorAll(".fade-up").forEach((el) => {
+
+        observer.observe(el);
+
+    });
+
+    // COUNTER ANIMATION
+
+    const counters = document.querySelectorAll(".counter");
+    const decimalCounters = document.querySelectorAll(".counter-decimal");
+
+    const counterObserver = new IntersectionObserver((entries) => {
+
+        entries.forEach((entry) => {
+
+            if(entry.isIntersecting){
+
+                // INTEGER COUNTERS
+
+                counters.forEach((counter) => {
+
+                    const target =
+                    +counter.getAttribute("data-target");
+
+                    let count = 0;
+
+                    const updateCounter = () => {
+
+                        const increment = target / 80;
+
+                        if(count < target){
+
+                            count += increment;
+
+                            counter.innerText =
+                            Math.ceil(count);
+
+                            requestAnimationFrame(updateCounter);
+
+                        }else{
+
+                            counter.innerText = target;
+
+                        }
+
+                    };
+
+                    updateCounter();
+
+                });
+
+                // DECIMAL COUNTERS
+
+                decimalCounters.forEach((counter) => {
+
+                    const target =
+                    parseFloat(counter.dataset.target);
+
+                    let count = 0;
+
+                    const updateDecimal = () => {
+
+                        const increment = target / 80;
+
+                        if(count < target){
+
+                            count += increment;
+
+                            counter.innerText =
+                            count.toFixed(1);
+
+                            requestAnimationFrame(updateDecimal);
+
+                        }else{
+
+                            counter.innerText =
+                            target.toFixed(1);
+
+                        }
+
+                    };
+
+                    updateDecimal();
+
+                });
+
+                counterObserver.disconnect();
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.4
+    });
+
+    const statsSection =
+    document.querySelector(".counter");
+
+    counterObserver.observe(statsSection);
+
+</script>
+
+</body>
+</html>

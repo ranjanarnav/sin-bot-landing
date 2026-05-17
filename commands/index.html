@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Angel's Sin ´ཀ` | Evil Discord Bot</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="fixed top-6 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50">
+
+        <!-- NAVBAR -->
+
+        <nav id="navbar"
+            class="flex items-center justify-between px-6 py-4 transition-all duration-300 rounded-2xl nav-transparent">
+
+            <!-- LOGO -->
+
+            <div class="flex items-center gap-4">
+
+                <div
+                    class="w-12 h-12 rounded-2xl bg-red-900 flex items-center justify-center shadow-[0_0_25px_rgba(139,0,0,0.45)]">
+
+                    <i class="fa-solid fa-skull text-white"></i>
+
+                </div>
+
+                <div>
+
+                    <h2 class="text-2xl font-black tracking-wide text-white">
+                        Angel's Sin ´ཀ`
+                    </h2>
+
+                    <p class="text-sm text-zinc-500">
+                        Evil Discord Core
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- MENU -->
+
+            <div class="hidden lg:flex items-center gap-12 text-sm font-medium text-zinc-300">
+                <a href="/" class="hover:text-red-500 transition">
+                    Home
+                </a>
+
+                <a href="/about/" class="hover:text-red-500 transition">
+                    About Us
+                </a>
+
+                <a href="/features/" class="hover:text-red-500 transition">
+                    Features
+                </a>
+
+                <a href="/stats/" class="hover:text-red-500 transition">
+                    Stats
+                </a>
+
+                <a href="/commands/" class="hover:text-red-500 transition active-link">
+                    Commands
+                </a>
+
+            </div>
+
+            <!-- BUTTON -->
+
+            <a href="https://discord.com/oauth2/authorize?client_id=1501177785161351218&permissions=8&integration_type=0&scope=bot"
+                target="_blank"
+                class="px-7 py-3 bg-red-800 hover:bg-red-700 rounded-2xl font-semibold transition shadow-[0_0_30px_rgba(139,0,0,0.35)]">
+
+                Invite Bot
+
+            </a>
+
+        </nav>
+
+    </header>
+<!-- HERO -->
+
+<section class="relative min-h-screen flex items-center overflow-hidden grid-bg">
+
+    <div class="absolute inset-0 hero-glow"></div>
+
+    <div class="absolute top-24 left-20 w-72 h-72 bg-red-900/20 blur-[120px] rounded-full"></div>
+
+    <div class="absolute bottom-20 right-20 w-72 h-72 bg-red-800/10 blur-[140px] rounded-full"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6 pt-32 w-full">
+
+        <div class="grid lg:grid-cols-2 gap-10 items-start">
+
+            <!-- LEFT -->
+
+            <div class="fade-up">
+
+                <div class="inline-flex items-center gap-3 glass px-4 py-2 rounded-full mb-8">
+
+                    <span class="w-2 h-2 bg-red-600 rounded-full animate-pulse"></span>
+
+                    <p class="text-sm text-zinc-400">
+                        Dark Commands • AI Systems • Moderation
+                    </p>
+
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-black leading-tight">
+
+                    Command The
+                    <span class="gradient-text">
+                        Darkness
+                    </span>
+
+                </h1>
+
+                <p class="mt-8 text-zinc-400 text-lg leading-relaxed max-w-2xl">
+
+                    Explore powerful commands for moderation,
+                    economy, AI systems, pets, leveling,
+                    hunting and complete server domination.
+
+                </p>
+
+                <!-- SEARCH -->
+
+                <div class="mt-10">
+
+                    <div class="glass rounded-2xl px-5 py-4 flex items-center gap-4">
+
+                        <i class="fa-solid fa-magnifying-glass text-red-600"></i>
+
+                        <input
+                        type="text"
+                        id="commandSearch"
+                        placeholder="Search commands..."
+                        class="bg-transparent outline-none w-full text-white placeholder:text-zinc-600">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- TERMINAL -->
+
+            <div class="glass rounded-[32px] p-6 fade-up">
+
+                <div class="flex items-center gap-3 mb-6">
+
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+
+                    <p class="text-zinc-500 text-sm ml-3">
+                        angel-terminal.exe
+                    </p>
+
+                </div>
+
+                <div id="terminal"
+                class="font-mono text-sm text-zinc-300 space-y-3">
+
+                    <p>
+                        > Booting Angel's Sin Core...
+                    </p>
+
+                    <p>
+                        > Loading infernal systems...
+                    </p>
+
+                    <p class="text-red-500 typing">
+                        > Awaiting command
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- COMMANDS -->
+<!-- FULL COMMANDS -->
+
+<section class="pb-28">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- ECONOMY -->
+
+        <div class="mb-24">
+
+            <div class="flex items-center gap-4 mb-10">
+
+                <div class="w-14 h-14 rounded-2xl bg-red-900/20 flex items-center justify-center text-red-600 text-2xl">
+
+                    <i class="fa-solid fa-coins"></i>
+
+                </div>
+
+                <div>
+
+                    <h2 class="text-4xl font-black">
+                        Economy Commands
+                    </h2>
+
+                    <p class="text-zinc-500">
+                        Dark coin management & gambling systems
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- CARD -->
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <div class="flex items-center justify-between">
+
+                        <h3 class="text-red-500 text-xl font-bold">
+                            as balance
+                        </h3>
+
+                        <button class="command-btn px-4 py-2 rounded-xl bg-red-900 hover:bg-red-700"
+                        data-command="Balance Checked">
+
+                            USE
+
+                        </button>
+
+                    </div>
+
+                    <p class="text-zinc-500 mt-4">
+                        Check your Dark Coin balance.
+                    </p>
+
+                </div>
+
+                <!-- CARD -->
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <div class="flex items-center justify-between">
+
+                        <h3 class="text-red-500 text-xl font-bold">
+                            as daily
+                        </h3>
+
+                        <button class="command-btn px-4 py-2 rounded-xl bg-red-900 hover:bg-red-700"
+                        data-command="Daily Reward Claimed">
+
+                            USE
+
+                        </button>
+
+                    </div>
+
+                    <p class="text-zinc-500 mt-4">
+                        Claim 500 Dark Coins every 24 hours.
+                    </p>
+
+                </div>
+
+                <!-- CARD -->
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <div class="flex items-center justify-between">
+
+                        <h3 class="text-red-500 text-xl font-bold">
+                            as work
+                        </h3>
+
+                        <button class="command-btn px-4 py-2 rounded-xl bg-red-900 hover:bg-red-700"
+                        data-command="Dark Job Completed">
+
+                            USE
+
+                        </button>
+
+                    </div>
+
+                    <p class="text-zinc-500 mt-4">
+                        Work a dark job and earn coins.
+                    </p>
+
+                </div>
+
+                <!-- CARD -->
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <div class="flex items-center justify-between">
+
+                        <h3 class="text-red-500 text-xl font-bold">
+                            as rob @user
+                        </h3>
+
+                        <button class="command-btn px-4 py-2 rounded-xl bg-red-900 hover:bg-red-700"
+                        data-command="Robbery Attempted">
+
+                            USE
+
+                        </button>
+
+                    </div>
+
+                    <p class="text-zinc-500 mt-4">
+                        Attempt to rob another user.
+                    </p>
+
+                </div>
+
+                <!-- CARD -->
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <div class="flex items-center justify-between">
+
+                        <h3 class="text-red-500 text-xl font-bold">
+                            as shop
+                        </h3>
+
+                        <button class="command-btn px-4 py-2 rounded-xl bg-red-900 hover:bg-red-700"
+                        data-command="Dark Shop Opened">
+
+                            USE
+
+                        </button>
+
+                    </div>
+
+                    <p class="text-zinc-500 mt-4">
+                        Browse the infernal marketplace.
+                    </p>
+
+                </div>
+
+                <!-- CARD -->
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <div class="flex items-center justify-between">
+
+                        <h3 class="text-red-500 text-xl font-bold">
+                            as cf heads 500
+                        </h3>
+
+                        <button class="command-btn px-4 py-2 rounded-xl bg-red-900 hover:bg-red-700"
+                        data-command="Coinflip Executed">
+
+                            USE
+
+                        </button>
+
+                    </div>
+
+                    <p class="text-zinc-500 mt-4">
+                        Gamble your Dark Coins.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ACTION -->
+
+        <div class="mb-24">
+
+            <div class="flex items-center gap-4 mb-10">
+
+                <div class="w-14 h-14 rounded-2xl bg-red-900/20 flex items-center justify-center text-red-600 text-2xl">
+
+                    <i class="fa-solid fa-skull-crossbones"></i>
+
+                </div>
+
+                <div>
+
+                    <h2 class="text-4xl font-black">
+                        Action Commands
+                    </h2>
+
+                    <p class="text-zinc-500">
+                        Dark anime interactions
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <div class="flex items-center justify-between">
+
+                        <h3 class="text-red-500 text-xl font-bold">
+                            as kill @user
+                        </h3>
+
+                        <button class="command-btn px-4 py-2 rounded-xl bg-red-900 hover:bg-red-700"
+                        data-command="Execution Complete">
+
+                            USE
+
+                        </button>
+
+                    </div>
+
+                    <p class="text-zinc-500 mt-4">
+                        Destroy someone brutally.
+                    </p>
+
+                </div>
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <div class="flex items-center justify-between">
+
+                        <h3 class="text-red-500 text-xl font-bold">
+                            as hug @user
+                        </h3>
+
+                        <button class="command-btn px-4 py-2 rounded-xl bg-red-900 hover:bg-red-700"
+                        data-command="Dark Hug Activated">
+
+                            USE
+
+                        </button>
+
+                    </div>
+
+                    <p class="text-zinc-500 mt-4">
+                        Hug someone from the void.
+                    </p>
+
+                </div>
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <div class="flex items-center justify-between">
+
+                        <h3 class="text-red-500 text-xl font-bold">
+                            as kiss @user
+                        </h3>
+
+                        <button class="command-btn px-4 py-2 rounded-xl bg-red-900 hover:bg-red-700"
+                        data-command="Shadow Kiss Sent">
+
+                            USE
+
+                        </button>
+
+                    </div>
+
+                    <p class="text-zinc-500 mt-4">
+                        Kiss beneath the shadow moon.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- HUNT -->
+
+        <div class="mb-24">
+
+            <div class="flex items-center gap-4 mb-10">
+
+                <div class="w-14 h-14 rounded-2xl bg-red-900/20 flex items-center justify-center text-red-600 text-2xl">
+
+                    <i class="fa-solid fa-dragon"></i>
+
+                </div>
+
+                <div>
+
+                    <h2 class="text-4xl font-black">
+                        Hunt & Zoo
+                    </h2>
+
+                    <p class="text-zinc-500">
+                        Capture creatures from the abyss
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <h3 class="text-red-500 text-xl font-bold">
+                        as hunt
+                    </h3>
+
+                    <p class="text-zinc-500 mt-4">
+                        Hunt for dark creatures.
+                    </p>
+
+                </div>
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <h3 class="text-red-500 text-xl font-bold">
+                        as zoo
+                    </h3>
+
+                    <p class="text-zinc-500 mt-4">
+                        View your captured creatures.
+                    </p>
+
+                </div>
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <h3 class="text-red-500 text-xl font-bold">
+                        as battle @user
+                    </h3>
+
+                    <p class="text-zinc-500 mt-4">
+                        Battle using your creatures.
+                    </p>
+
+                </div>
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <h3 class="text-red-500 text-xl font-bold">
+                        as buy demon egg
+                    </h3>
+
+                    <p class="text-zinc-500 mt-4">
+                        Hatch a random dark creature.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- PETS -->
+
+        <div class="mb-24">
+
+            <div class="flex items-center gap-4 mb-10">
+
+                <div class="w-14 h-14 rounded-2xl bg-red-900/20 flex items-center justify-center text-red-600 text-2xl">
+
+                    <i class="fa-solid fa-paw"></i>
+
+                </div>
+
+                <div>
+
+                    <h2 class="text-4xl font-black">
+                        Pet Commands
+                    </h2>
+
+                    <p class="text-zinc-500">
+                        Raise and evolve dark pets
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <h3 class="text-red-500 text-xl font-bold">
+                        as pets
+                    </h3>
+
+                    <p class="text-zinc-500 mt-4">
+                        View your dark pets.
+                    </p>
+
+                </div>
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <h3 class="text-red-500 text-xl font-bold">
+                        as feed 1
+                    </h3>
+
+                    <p class="text-zinc-500 mt-4">
+                        Feed your pet using Dark Coins.
+                    </p>
+
+                </div>
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <h3 class="text-red-500 text-xl font-bold">
+                        as play 1
+                    </h3>
+
+                    <p class="text-zinc-500 mt-4">
+                        Play with your creature.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- LEVELS -->
+
+        <div class="mb-24">
+
+            <div class="flex items-center gap-4 mb-10">
+
+                <div class="w-14 h-14 rounded-2xl bg-red-900/20 flex items-center justify-center text-red-600 text-2xl">
+
+                    <i class="fa-solid fa-ranking-star"></i>
+
+                </div>
+
+                <div>
+
+                    <h2 class="text-4xl font-black">
+                        Level Commands
+                    </h2>
+
+                    <p class="text-zinc-500">
+                        XP progression systems
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <h3 class="text-red-500 text-xl font-bold">
+                        as rank
+                    </h3>
+
+                    <p class="text-zinc-500 mt-4">
+                        View your XP and level progress.
+                    </p>
+
+                </div>
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <h3 class="text-red-500 text-xl font-bold">
+                        as leveltop
+                    </h3>
+
+                    <p class="text-zinc-500 mt-4">
+                        Top 10 highest level users.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ADMIN -->
+
+        <div>
+
+            <div class="flex items-center gap-4 mb-10">
+
+                <div class="w-14 h-14 rounded-2xl bg-red-900/20 flex items-center justify-center text-red-600 text-2xl">
+
+                    <i class="fa-solid fa-shield"></i>
+
+                </div>
+
+                <div>
+
+                    <h2 class="text-4xl font-black">
+                        Admin Commands
+                    </h2>
+
+                    <p class="text-zinc-500">
+                        Server domination controls
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <h3 class="text-red-500 text-xl font-bold">
+                        as admin give
+                    </h3>
+
+                    <p class="text-zinc-500 mt-4">
+                        Give Dark Coins to users.
+                    </p>
+
+                </div>
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <h3 class="text-red-500 text-xl font-bold">
+                        as admin resetall
+                    </h3>
+
+                    <p class="text-zinc-500 mt-4">
+                        Wipe every balance globally.
+                    </p>
+
+                </div>
+
+                <div class="glass rounded-[28px] p-6 command-card">
+
+                    <h3 class="text-red-500 text-xl font-bold">
+                        as admin blacklist
+                    </h3>
+
+                    <p class="text-zinc-500 mt-4">
+                        View blacklisted souls.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DESTROY OVERLAY -->
+
+<div id="destroy-overlay"
+class="fixed inset-0 bg-black z-[9999] hidden items-center justify-center flex-col overflow-hidden">
+
+    <div class="absolute inset-0 bg-red-950/40"></div>
+
+    <div class="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle,rgba(127,29,29,0.18)_1px,transparent_1px)] bg-[length:30px_30px]"></div>
+
+    <div class="relative z-10 text-center px-6">
+
+        <i class="fa-solid fa-skull-crossbones text-red-600 text-8xl mb-8"></i>
+
+        <h1 class="text-6xl md:text-8xl font-black text-red-600 tracking-widest mb-6">
+
+            DESTROYED
+
+        </h1>
+
+        <p class="text-zinc-400 text-xl mb-10">
+            Angel's Sin has consumed the server.
+        </p>
+
+        <button onclick="location.reload()"
+        class="px-8 py-4 bg-red-900 hover:bg-red-700 rounded-2xl font-bold text-lg transition">
+
+            Refresh To Continue
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer class="border-t border-red-900/20 py-10">
+
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+
+        <div>
+
+            <h2 class="text-3xl font-black">
+                Angel's Sin ´ཀ`
+            </h2>
+
+            <p class="text-zinc-600 mt-2 tracking-[3px] uppercase text-sm">
+                Evil Discord Domination
+            </p>
+
+        </div>
+
+        <div class="flex items-center gap-6 text-2xl">
+
+            <a href="#" class="hover:text-red-600 duration-300">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+
+            <a href="#" class="hover:text-red-600 duration-300">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="#" class="hover:text-red-600 duration-300">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- JS -->
+
+<script>
+
+    // NAVBAR
+
+    const navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+
+        if(window.scrollY > 40){
+
+            navbar.classList.add("nav-scrolled");
+
+        }else{
+
+            navbar.classList.remove("nav-scrolled");
+
+        }
+
+    });
+
+    // FADE ANIMATION
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach((entry) => {
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.1
+    });
+
+    document.querySelectorAll(".fade-up").forEach((el) => {
+
+        observer.observe(el);
+
+    });
+
+    // SEARCH
+
+    const search =
+    document.getElementById("commandSearch");
+
+    const commandCards =
+    document.querySelectorAll(".command-card");
+
+    search.addEventListener("input", () => {
+
+        const value =
+        search.value.toLowerCase();
+
+        commandCards.forEach((card) => {
+
+            const text =
+            card.innerText.toLowerCase();
+
+            if(text.includes(value)){
+
+                card.style.display = "block";
+
+            }else{
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+    });
+
+    // TERMINAL
+
+    const buttons =
+    document.querySelectorAll(".command-btn");
+
+    const terminal =
+    document.getElementById("terminal");
+
+    const destroyOverlay =
+    document.getElementById("destroy-overlay");
+
+    buttons.forEach((button) => {
+
+        button.addEventListener("click", () => {
+
+            const command =
+            button.dataset.command;
+
+            if(command === "as destroy"){
+
+                document.body.style.animation =
+                "shake 0.2s infinite";
+
+                setTimeout(() => {
+
+                    document.body.style.animation = "";
+
+                    destroyOverlay.classList.remove("hidden");
+                    destroyOverlay.classList.add("flex");
+
+                }, 1200);
+
+                return;
+
+            }
+
+            terminal.innerHTML = `
+
+                <p>> Executing command...</p>
+
+                <p class="text-red-500">> ${command}</p>
+
+                <p>> Angel's Sin response generated.</p>
+
+                <p class="text-green-500 typing">
+                    > Command executed successfully
+                </p>
+
+            `;
+
+        });
+
+    });
+
+</script>
+
+</body>
+</html>
